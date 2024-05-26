@@ -1,10 +1,11 @@
 import discord
+import os
 import asyncio
 import threading
 import socket
 import random
 
-TOKEN = 'your_discord_token_here'
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 client = discord.Client()
 
